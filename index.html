@@ -1,42 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
-    <link rel="icon" href="images/tittle.png">
-    <link rel="stylesheet" href="style.css">
-   
-    <!-- bootstrap link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-    <!-- Header design -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" class="netflix_logo" alt="netflix_logo">
-            </div>
-            <div class="navbar_nav_items">
-                <div class="nav-item">
-                    <div class="dropdown_container">
-                        <i class="bi bi-translate"></i>
-                        <select name="languages" id="languages_select" class="languages_select">
-                            <option value="english" style="color: black;">English</option>
-                            <option value="hindi" style="color: black;">हिन्दी</option>
-                        </select>
-                    </div>
+
+
+
+
+<body>
+    <div class="home">
+        <div class="topbar">
+            <img src="images\logo.png" alt="" width="20%">
+            <div class="btns">
+                <div class="drop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-translate"
+                        viewBox="0 0 16 16" style="margin-top: 2px;">
+                        <path
+                            d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z" />
+                    </svg>
+                    <select name="" id="">
+                        <option value="">English</option>
+                        <option value=""></option>
+                    </select>
                 </div>
-                <div class="nav-item">
-                    <button class="signin_button">Sign In</button>
+                <button id="signin">Sign In</button>
+            </div>
+        </div>
+
+        <!-- carousel-inner to input scrolling images without control -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images\kaithi.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images\vadachennai.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images\pisasu.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images\csv.webp" class="d-block w-100" alt="">
                 </div>
             </div>
-        </nav>
-    </header>
-    
+        </div>
+        <div class="intro">
+            <h1>Unlimited movies,TV shows and more</h1>
+            <p>Starts at ₹149. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="startlogin">
+                <input type="text" name="slogin" id="" placeholder="Email">
+                <button><b>Get Started</b>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="right_line"></div>
+
+
+
+
+    </div>
+
+    <div class="nextpage">
+        <p><b>Play Mobile Games</b></p>
+        <div class="mobilegame">
+            <div class="gtext">
+                <p><b>Mobile games now included in every plan</b><br>
+                    No ads,extra fees, or in-app purchases. Enjoy unlimited access to a growing catalogue of people and
+                    exlusive games.</p>
+            </div>
+            <div class="gimg">
+                <img src="bgimg.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="reason">
+        <h2>More reasons to join</h2>
+        <div class="box">
+            <div class="box1">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="box2">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+            <div class="box3">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+            </div>
+            <div class="box4">
+                <h2>Create profiles for kids</h2>
+                <p>Send kids on adventures with their favourite characters in a space made just for them — free with
+                    your
+                    membership.</p>
+            </div>
+        </div>
+    </div>
+    <h2 style="position: relative;top: 600px; left: 5%; color: white;">Frequently Asked Questions</h2>
+    <div class="faq">
+        <!-- <h2>Frequently Asked Questions</h2> -->
+        <div class="expandable-section">
+            <input type="checkbox" id="expand-section1" class="expand-trigger" hidden>
+            <label for="expand-section1" class="heading">
+                <h3>What is Netflix?</h3>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="white" class="bi bi-plus-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                </svg> -->
+            </label>
+            <div class="content">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                    documentaries and more on thousands of internet-connected devices.
+
+                    You can watch as much as you want, whenever you want, without a single ad all for one low monthly
+                    price. There's always something new to discover, and new TV shows and movies are added every week!
+                </p>
+            </div>
+        </div>
+        <div class="expandable-section">
+            <input type="checkbox" id="expand-section2" class="expand-trigger" hidden>
+            <label for="expand-section2" class="heading">
+                <h3>How much does Netflix Cost?</h3>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="white" class="bi bi-plus-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                </svg> -->
+            </label>
+            <div class="content">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                    monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+            </div>
+        </div>
+        <div class="expandable-section">
+            <input type="checkbox" id="expand-section3" class="expand-trigger" hidden>
+            <label for="expand-section3" class="heading">
+                <h3>Where can I watch?</h3>
+            </label>
+            <div class="content">
+                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                    netflix.com from your personal computer or on any internet-connected device that offers the Netflix
+                    app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads
+                    to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </p>
+            </div>
+        </div>
+        <div class="expandable-section">
+            <input type="checkbox" id="expand-section4" class="expand-trigger" hidden>
+            <label for="expand-section4" class="heading">
+                <h3>Is Netflix good for kids?</h3>
+            </label>
+            <div class="content">
+                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                    family-friendly TV shows and films in their own space.
+
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="email">
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <form action="">
+            <input type="email" name="mail" id="mail" placeholder="Email Address">
+            <button id="started">Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <div class="ques">
+        <p>Questions? Call 000-800-919-1694</p>
+    </div>
+    <div class="links">
+        <table>
+            <tr>
+              <td><u>FAQ</u></td>
+              <td><u>Help Centre</u></td>
+              <td><u>Account</u></td>
+              <td><u>Media Centre</u></td>
+            </tr>
+            <tr>
+              <td><u>Investor Relations</u></td>
+              <td><u>Jobs</u></td>
+              <td><u>Ways to Watch</u></td>
+              <td>Terms of Use</td>
+            </tr>
+            <tr>
+              <td><u>Privacy</u></td>
+              <td><u>Cookie Preferences</u></td>
+              <td><u>Corporate Information</u></td>
+              <td><u> Contact Us</u></td>
+            </tr>
+            <tr>
+              <td><u>Speed Test</u></td>
+              <td><u>Legal Notices</u></td>
+              <td><u>Only on Netflix</u></td>
+              <td></td>
+            </tr>
+          </table>
+    </div>
+   <div class="end">
+    <p>Netflix India</p>
+   </div>
+
+
+
 </body>
+
 </html>
