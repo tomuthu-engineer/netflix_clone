@@ -20,4 +20,15 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 - Create a new branch for your feature or bug fix.
 - Make your changes and test thoroughly.
 - Commit your changes with descriptive commit messages.
-- Push your branch to your fork and submit a pull request.
+- Push your branch to your fork and submit a pull request.3
+
+## License
+
+This project is open-source under the MIT License. See the LICENSE file for details.
+
+## Acknowledgments
+
+- The project was inspired by the Netflix user interface.
+
+Feel free to reach out for any questions or feedback!
+
