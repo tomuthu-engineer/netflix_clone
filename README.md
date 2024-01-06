@@ -16,8 +16,8 @@ This project is a simple Netflix clone website created using only HTML and CSS. 
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
 
-1.Fork the repository.
-2.Create a new branch for your feature or bug fix.
-3.Make your changes and test thoroughly.
-4.Commit your changes with descriptive commit messages.
-5.Push your branch to your fork and submit a pull request.
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and test thoroughly.
+- Commit your changes with descriptive commit messages.
+- Push your branch to your fork and submit a pull request.
