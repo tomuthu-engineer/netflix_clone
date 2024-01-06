@@ -17,5 +17,5 @@ This project is a simple Netflix clone website created using only HTML and CSS. 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/netflix-clone-html-css.git
-cd netflix-clone-html-css
+git clone https://github.com/tomuthu-engineer/netflix_clone
+cd netflix-clone
