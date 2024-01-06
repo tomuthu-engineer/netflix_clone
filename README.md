@@ -1,6 +1,6 @@
 # Netflix Clone Website (HTML/CSS)
 
-![Netflix Clone](link_to_your_image_here)
+![Netflix Clone](https://github.com/tomuthu-engineer/netflix_clone/blob/main/images/header-image.jpeg)
 
 ## Description
 
