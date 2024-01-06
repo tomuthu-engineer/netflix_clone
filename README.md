@@ -12,10 +12,12 @@ This project is a simple Netflix clone website created using only HTML and CSS. 
 - HTML and CSS only, no JavaScript involved.
 - Static content showcasing the layout and design.
 
-## Usage
+## Contributing
 
-1. Clone the repository:
+Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
 
-```bash
-git clone https://github.com/tomuthu-engineer/netflix_clone
-cd netflix-clone
+1.Fork the repository.
+2.Create a new branch for your feature or bug fix.
+3.Make your changes and test thoroughly.
+4.Commit your changes with descriptive commit messages.
+5.Push your branch to your fork and submit a pull request.
